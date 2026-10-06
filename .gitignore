@@ -61,6 +61,8 @@ cover/
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
+*.sqlite3
+*.sqlite3-journal
 
 # Flask stuff:
 instance/
@@ -152,7 +154,9 @@ activemq-data/
 # Environments
 .env
 .envrc
+.env.*
 .venv
+.venv/
 env/
 venv/
 ENV/
@@ -218,3 +222,29 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# macOS
+.DS_Store
+
+# Android / Gradle
+.gradle/
+**/.gradle/
+**/build/
+local.properties
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+captures/
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+
+# Kotlin
+*.kotlin_module
+
+# Generated app data
+backend/media/
+backend/staticfiles/
